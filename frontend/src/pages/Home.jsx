@@ -4,13 +4,15 @@ import heroImg01 from "../assets/images/hero-img01.png";
 import heroImg02 from "../assets/images/hero-img02.png"
 import heroImg03 from "../assets/images/hero-img03.png"
 import icon01 from "../assets/images/icon01.png"
+import { Link } from "react-router-dom";
+import { BsArrowRight} from "react-icons/bs";
 
 const Home = () => {
   return (
     <>
 
       {/* ===== Hero section here === */}
-        <section className="hero_section pt-[10px] 2xl:h-[400px]">
+        <section className="hero_section pr-5  pt-[10px] 2xl:h-[400px]">
           <div className="container">
             <div className="flex flex-col lg:flex-row gap-[90px] items-center justify-between">
 
@@ -70,7 +72,7 @@ const Home = () => {
         {/* ===Hero section end=== */}
         <section>
           <div className="container">
-            <div className="lg:w-[470px] mx-auto">
+            <div className="lg:w-[670px] mx-auto">
             <h2 className="heading text-center">Providing the best mdeical services in Nigeria</h2>
             <p className="text_para text-center">World class care for everyone. Our health system offers unmatched expert health care</p>
             </div>
@@ -84,6 +86,18 @@ const Home = () => {
 
                 </div>
 
+                  <div className="mt-[30px]">
+                    <h2 className="text-[26px] leading-9 text-headingColor font-[700] text-center">Find a Doctor</h2>
+                  <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">World-class care for everyone. 
+                  Our health system offers unmatched, expert health care. From the lab to clinic </p>
+                 
+                 <Link to='/doctors' className="w-[44px] h-[44px] rounded-full border border-solid
+                  border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group
+                   hover:bg-primaryColor hover:border-none">
+
+                    <BsArrowRight />
+                   </Link>
+                  </div>
               </div>
             </div>
 

@@ -45,7 +45,7 @@ const Header = () => {
 
   const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
   return (
-    <head className="header mb-0 sticky top-0 z-50  flex items-center" ref={headerRef}>
+    <head className="header  sticky top-0 z-50  flex items-center" ref={headerRef}>
       <div className="container">
         <div className="flex items-center justify-between">
           {/* input logo here */}
@@ -80,7 +80,8 @@ const Header = () => {
               </div>
 
               <Link to='/login'>
-              <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]">Login</button>
+              <button className='transition duration-300 capitalize bg-blue-400 p-2 text-base
+  lg:text-2xl font-normal rounded-lg text-white hover:bg-pink-400'>Login</button>
               </Link>
               <span className="md:hidden" onClick={toggleMenu}>
                 <BiMenu className="w-6bh-6 cursor-pointer"/>
